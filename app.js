@@ -91,11 +91,11 @@ async function checkWeather(city) {
 
     document.querySelector(".city").innerHTML = data.city.name;
     document.querySelector(".temp").innerHTML =
-      data.list[0].main.temp.toFixed(1) + "°C";
+      Math.round(data.list[0].main.temp) + "°C";
     document.querySelector(".humidity").innerHTML =
       data.list[0].main.humidity + "%";
     document.querySelector(".wind").innerHTML =
-      data.list[0].wind.speed + "km/h";
+      Math.round(data.list[0].wind.speed) + "km/h";
 
     weatherIcon.src = getWeatherIcon(data.list[0].weather[0].main);
 
@@ -131,11 +131,11 @@ async function checkForecast(city) {
     weatherCards[i].querySelector(".date").innerHTML =
       fiveDaysForecast[i].dt_txt;
     weatherCards[i].querySelector(".tempForecast").innerHTML =
-      fiveDaysForecast[i].main.temp.toFixed(1) + "°C";
+      Math.round(fiveDaysForecast[i].main.temp) + "°C";
     weatherCards[i].querySelector(".humidityForecast").innerHTML =
       fiveDaysForecast[i].main.humidity + "%";
     weatherCards[i].querySelector(".windForecast").innerHTML =
-      fiveDaysForecast[i].wind.speed + "km/h";
+      Math.round(fiveDaysForecast[i].wind.speed) + "km/h";
     weatherCards[i].querySelector(".weather-icon-forecast").src =
       getWeatherIcon(fiveDaysForecast[i].weather[0].main);
   }
