@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="backCard">
+      <div class="title">
+        <h1>Weather <span>App</span></h1>
+      </div>
+
+      <div class="card">
+        <div class="search">
+          <input type="text" placeholder="Type a city..." spellcheck="false" />
+
+          <div class="col">
+            <button class="search-btn">
+              <img src="images/search.png" />
+            </button>
+
+            <button class="location-btn">
+              <img src="images/location.svg" />
+            </button>
+          </div>
+        </div>
+
+        <div class="error"><p>The city name is incorrect!</p></div>
+
+        <div class="weather">
+          <img
+            src="images/spinner.svg"
+            class="weather-icon"
+            alt="Weather Icon"
+          />
+
+          <h1 class="temp">10°C</h1>
+
+          <h2 class="city">Bucharest</h2>
+
+          <div class="details">
+            <div class="col">
+              <img src="images/humidity.png" class="humidity-icon" />
+
+              <div>
+                <p class="humidity">50%</p>
+                <p>Humidity</p>
+              </div>
+            </div>
+
+            <div class="col">
+              <img src="images/wind.png" class="wind-icon" />
+
+              <div>
+                <p class="wind">15 km/h</p>
+                <p>Wind speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="days-forecast">
+        <ul class="weather-cards">
+          <div class="card">
+            <li class="row">
+              <h3 class="date">(2024-01-01)</h3>
+              <img src="images/clear.png" class="weather-icon-forecast" />
+            </li>
+
+            <div class="container">
+              <p>Temperature:</p>
+              <p class="tempForecast">10°C</p>
+
+              <p>Wind speed:</p>
+              <p class="windForecast">4.31 km/h</p>
+
+              <p>Humidity:</p>
+              <p class="humidityForecast">60%</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <li class="row">
+              <h3 class="date">(2024-01-01)</h3>
+              <img src="images/clear.png" class="weather-icon-forecast" />
+            </li>
+
+            <div class="container">
+              <p>Temperature:</p>
+              <p class="tempForecast">10°C</p>
+
+              <p>Wind speed:</p>
+              <p class="windForecast">4.31 km/h</p>
+
+              <p>Humidity:</p>
+              <p class="humidityForecast">60%</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <li class="row">
+              <h3 class="date">(2024-01-01)</h3>
+              <img src="images/clear.png" class="weather-icon-forecast" />
+            </li>
+
+            <div class="container">
+              <p>Temperature:</p>
+              <p class="tempForecast">10°C</p>
+
+              <p>Wind speed:</p>
+              <p class="windForecast">4.31 km/h</p>
+
+              <p>Humidity:</p>
+              <p class="humidityForecast">60%</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <li class="row">
+              <h3 class="date">(2024-01-01)</h3>
+              <img src="images/clear.png" class="weather-icon-forecast" />
+            </li>
+
+            <div class="container">
+              <p>Temperature:</p>
+              <p class="tempForecast">10°C</p>
+
+              <p>Wind speed:</p>
+              <p class="windForecast">4.31 km/h</p>
+
+              <p>Humidity:</p>
+              <p class="humidityForecast">60%</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <li class="row">
+              <h3 class="date">(2024-01-01)</h3>
+              <img src="images/clear.png" class="weather-icon-forecast" />
+            </li>
+
+            <div class="container">
+              <p>Temperature:</p>
+              <p class="tempForecast">10°C</p>
+
+              <p>Wind speed:</p>
+              <p class="windForecast">4.31 km/h</p>
+
+              <p>Humidity:</p>
+              <p class="humidityForecast">60%</p>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
